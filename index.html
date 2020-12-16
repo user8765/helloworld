@@ -4,42 +4,8 @@
 
 <script>
 
-async function hello1() {
-// let response = await fetch('https://piks93rfkg.execute-api.us-east-2.amazonaws.com/default/HelloWorld');
-let response = await fetch('https://hz8rizgmeg.execute-api.us-east-2.amazonaws.com/beta/items/1');
-let data = await response.json();
-alert(data);
-return data;
-}
-
-function hello() {
- alert("Hi");
-hello1().then(data => console.log(data));
- alert("Bye");
-}
-
-
-const url = "https://yhy6e23l02.execute-api.us-east-1.amazonaws.com/live/v1/faraday_interaction/package_injection"
-
-const data = {"retailerCode": "ABC",
-        "scannableId": "TBA3456721",
-        "accessPointId": 48772511
-};
-
 function h() {
-fetch(url, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },  
-  body: JSON.stringify(data),
-})
-.then(data => {
-  console.log('Success:', data);
-})
-.catch((error) => {
-  console.error('Error:', error);
-});
+alert("Hello World!");
 }
 
   </script>
